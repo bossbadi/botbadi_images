@@ -1,18 +1,17 @@
 __**botbadi - The best multipurpose bot**__
+Prefix: `%` or `@botbadi`
 
 You are looking at the all-around Discord bot developed by bossbadi using Python 3. It is jam-packed with a plethora of *stolen* features from popular bots including a calculator, image modification, guessing games, typing races, auto mod, chatbot and more! It has more than 100 unique commands that can be used to liven up your servers. Oh, and a plus: it's verified by the Discord developer team so you know it's legit!
 
 > :notes: Music (supports YouTube, Spotify, file uploads, and stream URLs)
 > :factory_worker: Effective and reliable moderation featuring spam ping auto mod
 > :moneybag: A difficult yet addictive economy system
-
 > :nerd: Math calculator, point plotter, and many practice problems
-> :exploding_head: Artificial Intelligence including handwritten digit recognition
-> :video_game: Multiplayer and singleplayer activities such as the Minecraft guessing game
 
+> :exploding_head: Artificial intelligence including handwritten digit recognition
+> :video_game: Multiplayer and singleplayer activities such as the Minecraft guessing game
 > :camera_with_flash: Numerous image manipulation commands with a variety of filters and overlays
 > :tools: Code compiler, translator, and a tool which allows you to screenshot any website
-> :game_die: Dice rolls, coin flips, insults, interesting facts, and other randomness
 
 This is just a brief description. Invite it to experience its true power: https://dsc.gg/botbadi
 Join the support server should problems arise while using the bot: https://discord.gg/rzDqQqD

@@ -1,4 +1,4 @@
--fix deletion from db
+-add streak system to games
 
 -muted role auto set
 
@@ -11,8 +11,6 @@
 -Spotify playlists
 
 -async file write
-
--kuwahara slow, resize image
 
 -play from yt playlist
 

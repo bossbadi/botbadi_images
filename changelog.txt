@@ -1,3 +1,8 @@
+3/24/2021
+v3.1.6:
+    -Added new developer command (%exec)
+    -Added text to speech (%tts)
+
 3/21/2021
 v3.1.5:
     -Fixed error in '%talk' if user runs '%change' alone

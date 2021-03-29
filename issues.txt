@@ -1,3 +1,11 @@
+-actual Spotify support
+
+-chatbot
+
+-https://serux.pro/rendercolour?hex=181902&height=100&width=225
+
+-voice commands https://github.com/Rapptz/discord.py/issues/1094#issuecomment-719635980
+
 -add streak system to games
 
 -muted role auto set
@@ -7,8 +15,6 @@
 -lget auto
 
 -https://obrazium.com/endpoints
-
--Spotify playlists
 
 -async file write
 

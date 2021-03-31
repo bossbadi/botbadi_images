@@ -1,3 +1,8 @@
+3/30/2021
+v3.1.8:
+    -Fixed music crashing when using modified YT link
+    -'%emojiurl' now animates familiar GIF emojis
+
 3/28/2021
 v3.1.7:
     -Added new songs to dev's playlist

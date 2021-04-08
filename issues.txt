@@ -1,6 +1,6 @@
 -actual Spotify support
 
--chatbot
+-a good chatbot
 
 -https://serux.pro/rendercolour?hex=181902&height=100&width=225
 

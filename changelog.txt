@@ -1,3 +1,7 @@
+4/10/2021
+v3.2.1:
+    -Should now support 'youtu.be' and other YT URLs
+
 4/7/2021
 v3.2.0:
     -Improved '%predict' (added two new models)

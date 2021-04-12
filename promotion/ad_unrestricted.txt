@@ -16,6 +16,8 @@ This means that *anyone* can:
 -Cannot moderate other members (because someone will probably ban all the members)
 -Primarily a safe for work server (because people of all ages are here)
 ```
-You can think of this server as "*A town with no laws.*" If you're interested in joining, make sure that you mute and suppress all mentions so you won't go out of your mind. This is meant to be a fun community, so try your best to keep it that way
+You can think of this server as "A town with no laws." If you're interested in joining, make sure that you mute and suppress all mentions so you won't go out of your mind. This is meant to be a fun community, so try your best to keep it that way.
+
+Sorry to break it to you, but even though this server has fewer rules than most servers, Discord's terms of service and community guidelines must be followed at all times. The difference that sets this server apart from others is that this server gives you access to more privileges (more moderation powers).
 
 https://discord.gg/2sqVgts

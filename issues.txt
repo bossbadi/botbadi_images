@@ -1,3 +1,9 @@
+-add stage channels to muted role setup
+
+-support for stage channels
+
+-safe search
+
 -actual Spotify support
 
 -a good chatbot

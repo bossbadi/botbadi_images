@@ -1,3 +1,15 @@
+-Some mc pics don't show
+
+-%ocr takes too long with images with lots of text
+
+-more guessing game themes
+
+-add dictionary cmd
+
+-add bkgd remover
+
+-add trivia https://opentdb.com/api_config.php
+
 -add stage channels to muted role setup
 
 -support for stage channels

@@ -1,3 +1,11 @@
+4/21/2021
+v3.2.3:
+    -Migrated '%predict' command to API
+    -Fixed error running '%ocr' with blank image
+    -Removed some redundant commands
+    -New random responses when chatbot is down
+    -Developer command '%bedit' now supports embeds
+
 4/17/2021
 v3.2.2:
     -Fixed some famous images not showing (%famous)

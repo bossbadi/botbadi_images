@@ -1,3 +1,8 @@
+4/27/2021
+v3.2.4:
+    -Revised '%h.info' command a bit
+    -Bot now auto deafens in voice channels
+
 4/21/2021
 v3.2.3:
     -Migrated '%predict' command to API

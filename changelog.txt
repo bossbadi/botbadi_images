@@ -1,3 +1,9 @@
+5/7/2021
+v3.2.6:
+    -Added 4 new image mods (including '%thick')
+    -Changed image to webp for better performance
+    -Redesigned image mod help embeds (4 pages)
+
 5/2/2021
 v3.2.5:
     -Improved '%graph' by utilizing the API

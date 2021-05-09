@@ -1,3 +1,9 @@
+5/9/2021
+v3.2.7:
+    -Added different image formats to '%avatar'
+    -Added command to deafen the bot ('%deaf')
+    -Fixed errors running '%graph' with bad args
+
 5/7/2021
 v3.2.6:
     -Added 4 new image mods (including '%thick')

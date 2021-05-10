@@ -1,4 +1,7 @@
 5/9/2021
+v3.2.8:
+    -Added role support for '%perm' command
+    -Improved colors for '%perm' and '%whois'
 v3.2.7:
     -Added different image formats to '%avatar'
     -Added command to deafen the bot ('%deaf')

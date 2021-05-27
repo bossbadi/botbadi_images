@@ -2,7 +2,7 @@ botbadi:
 Math calculator, profile picture image modification, Minecraft and celebrity guessing games, typing races, smart auto mod, chatbot and more!
 
 bossbeats:
-BossBeats is a smarter music bot that has advanced search and play features. It supports YouTube, Spotify, stream URLs and file uploads!
+BossBeats is a smarter music bot that has advanced features. It supports YouTube, SoundCloud, Twitch, stream URLs, file uploads, and more!
 
 numericboss:
 Dice rolls, coin flips, arithmetic calculator, graph ordered-pairs, random number generator

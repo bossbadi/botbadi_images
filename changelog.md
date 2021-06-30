@@ -1,0 +1,863 @@
+### 6/29/2021
+##### v4.0.0
+
+_General info_
+- Run commands by editing messages or replying to the bot
+- Most commands now work in DMs
+- Added detailed documentation to commands
+- New format for help (%help [category/command])
+- Disable default prefix "%" in settings
+- New settings look (use the '-e' argument to switch back the old look)
+- Merged "General" and "Random" categories into "Fun" category
+
+_Moderation_
+- New embed colors for moderation actions
+- Mute command now sets up "Muted" role automatically
+- Removed 'wipe' command (takes too much time and resources)
+- Removed 'dm' command (defeats the purpose of the postcard)
+
+_Economy_
+- Added 'rob' command
+- Added new item "donut" to shop to assist in robbing
+- Added passive mode user setting to prevent robbing
+- Added ability to sell items
+- Added 'quote' command to type a random quote for coins
+- Raised the award for 'type' command because it's hard
+
+_Music_
+- Improved queue pagination and item selection
+- Added 'seek' command to skip to a certain time in a song
+- Added 'shuffle' command to shuffle the queue
+- Added 'move' command to reposition a queued song
+- Louder volume (limit is now 1000)
+- Added support for YouTube playlists
+- Additional support for Bandcamp, Soundcloud, Twitch, Vimeo, and Mixer
+- Removed Spotify support (It'll be back once the API is properly integrated)
+
+
+### 5/9/2021
+##### v3.2.8:
+- Added role support for '%perm' command
+- Improved colors for '%perm' and '%whois'
+##### v3.2.7:
+- Added different image formats to '%avatar'
+- Added command to deafen the bot ('%deaf')
+- Fixed errors running '%graph' with bad args
+
+### 5/7/2021
+##### v3.2.6:
+- Added 4 new image mods (including '%thick')
+- Changed image to webp for better performance
+- Redesigned image mod help embeds (4 pages)
+
+### 5/2/2021
+##### v3.2.5:
+- Improved '%graph' by utilizing the API
+- Support for more file types in image mods
+- Redesigned '%pop' command as an embed
+- Improved '%clear' command
+- Added new words to '%type' (now over 1k)
+- Added over 50 new facts (%fact)
+
+### 4/27/2021
+##### v3.2.4:
+- Revised '%h.info' command a bit
+- Bot now auto deafens in voice channels
+
+### 4/21/2021
+##### v3.2.3:
+- Migrated '%predict' command to API
+- Fixed error running '%ocr' with blank image
+- Removed some redundant commands
+- New random responses when chatbot is down
+- Developer command '%bedit' now supports embeds
+
+### 4/17/2021
+##### v3.2.2:
+- Fixed some famous images not showing (%famous)
+- Added developer privileges to '%bal' and '%inv'
+- Fixed silent errors in the '%buy' command
+- Updated '%embed': supports uploaded image
+- Added 100 new famous photos (%famous)
+
+### 4/10/2021
+##### v3.2.1:
+- Should now support 'youtu.be' and other YT URLs
+
+### 4/7/2021
+##### v3.2.0:
+- Improved '%predict' (added two new models)
+
+### 4/3/2021
+##### v3.1.9:
+- Fixed certain songs not showing now playing
+- Fixed errors when no YouTube results
+- Added invite info command (%whois [Invite])
+- Remodeled many bot info embeds
+- Removed detailed description (%desc) command
+- Removed '%support' - merged it with '%invite'
+- Removed '%servers' and '%uptime' - use '%about'
+
+### 3/30/2021
+##### v3.1.8:
+- Fixed music crashing when using modified YT link
+- '%emojiurl' now animates familiar GIF emojis
+
+### 3/28/2021
+##### v3.1.7:
+- Added new songs to dev's playlist
+- Nearly doubled famous pics (%famous)
+
+### 3/24/2021
+##### v3.1.6:
+- Added new developer command (%exec)
+- Added text to speech (%tts)
+
+### 3/21/2021
+##### v3.1.5:
+- Fixed error in '%talk' if user runs '%change' alone
+- Fixed deletion from database (users and settings)
+
+### 3/20/2021
+##### v3.1.4:
+- Improved speed of image mods on large files
+- Improved image mod errors on non-image files
+
+### 3/16/2021
+##### v3.1.3:
+- Removed some corny roasts
+- Updated admin info embed (%h.info)
+- Reduced price of postcard by half (%shop)
+
+### 3/14/2021
+##### v3.1.2:
+- '%bal' and '%inv' should now be faster
+- '%set' and '%uset' should now be faster
+- Fixed '%rich' crashing if no one in server has account
+
+### 3/13/2021
+##### v3.1.1:
+- Added optional '--roast' arg to mod cmds (%h.mod)
+- Changed "Member" to "Offender" in user mod embed
+- Possibility of apostrophe screwing up fixed
+
+### 3/12/2021
+##### v3.1.0:
+- Fixed richest not showing on leaderboard
+- '%predict' should now work on non-PNG image files
+- Added two image mod commands (%floor and %cube)
+
+### 3/11/2021
+##### v3.0.9:
+- New and larger Minecraft images (%mc)
+- Invalid-user showing up on economy cmds fixed
+- Fixed silent error when deleting generated files
+- Added new celebrity photos (%famous)
+
+### 3/10/2021
+##### v3.0.8:
+- Even smarter digit predictions (using 2 models)
+- Improved a developer command (%lget)
+- Fixed vulnerabilities in many error messages
+##### v3.0.7:
+- Added colored image generator (%color)
+- Smarter digit recognition (%predict)
+- Added 5 new image mod commands (%h.img)
+
+### 3/6/2021
+##### v3.0.6:
+- Fixed transparent image bug in '%edge'
+- Modified a developer command (%lget [-e])
+- Made '%purge' an alias to '%del' command
+- Added pagination to music queue (%queue)
+
+### 3/5/2021
+##### v3.0.5:
+- New music added to dev's playlist (%plugin)
+- Removed some dev privileges in mod commands
+
+### 3/4/2021
+##### v3.0.4:
+- Fixed music error if bot lacks add reactions perm
+- Added new music to developer's playlist (%plugin)
+- Restricted slowmode command to channel managers
+- Restricted settings command to server managers
+- Redesigned many command help embeds
+- Removed '%bot' command, use '%invite' instead
+
+### 3/2/2021
+##### v3.0.3:
+- Error when running '%ss' command fixed
+- Error when queueing (%play) YouTube links fixed
+- Improved YouTube link parsing algorithm
+- Fixed unrelated videos appearing (%queue YT links)
+
+### 2/27/2021
+##### v3.0.2:
+- Added Spotify support (no playlists yet though)
+- Fixed small error when searching long keywords
+##### v3.0.1:
+- Improved '%ocr' command (should be more accurate)
+- Added '%ascii' command (kind of like bubble letters)
+- Say goodbye to '%hi' and '%bye' commands
+- Removed '%users' command, use server info instead
+
+### 2/26/2021
+##### v3.0.0:
+- Improved '%ss' command (higher quality images)
+
+### 2/25/2021
+##### v2.9.9:
+- Added text recognition from image (%ocr)
+- Reorganized command help embeds
+
+### 2/24/2021
+##### v2.9.8:
+- Added digit recognizer command (%predict)
+
+### 2/21/2021
+##### v2.9.7:
+- Fixed error when running '%vol' when music's stopped
+- Improved '%perm' command to get anyone's permissions
+- Fixed a tiny error when queuing large URLs
+
+### 2/19/2021
+##### v2.9.6:
+- Made economy leaderboard much faster (%rich)
+- Updated muted role to a more gray color
+- Spam auto mod now ignores slowmode channels
+- Direct message chatbot is here! DM the bot to see
+
+### 2/18/2021
+##### v2.9.5:
+- Added source code compiler (%run)
+- Check supported languages for compiler (%lang)
+
+### 2/16/2021
+##### v2.9.4:
+- Updated credits (%credits)
+- Fixed delays for other users when using image mods
+
+### 2/14/2021
+##### v2.9.3:
+- Bots being auto modded during edits fixed?
+- Added `%bedit` and `%bdel` owner commands
+- Improved missing permission errors
+- Remove all reactions from a message (%rmr)
+
+### 2/13/2021
+##### v2.9.2:
+- Fixed index out of range error for settings
+- Improved link parsing algorithm
+- Added mass ping auto mod (5+ pings in msg)
+
+### 2/12/2021
+##### v2.9.1:
+- Randomized embed colors for '%dm' command
+- '%ss' now auto completes partial URL
+- Switched to a smarter chatbot (%credits)
+
+### 2/10/2021
+##### v2.9.0:
+- Improved server info command (%serverinfo)
+- Screenshot a website in an NSFW channel (%ss)
+- Max music volume limited to 200% (%vol)
+- Translate command back up (%translate)
+- Chatbot API down -> giving random responses
+- Fixed permissions and errors in moderation cmds
+- Improved '%set' and '%uset' (simplified params)
+- Fixed minor bug playing from dev's playlist
+- Empty dev's playlist auto refills (%pl --bossbadi)
+
+### 2/9/2021
+##### v2.8.9:
+- Randomized colors for snipe and editsnipe
+
+### 2/4/2021
+##### v2.8.8:
+- Fixed error when playing "youtu.be" links
+- Fixed obscured titles in bossbadi's playlist
+- Improved muted role perms setup (it's faster)
+- Improved '%eval' command
+##### v2.8.7:
+- Server info command added alias (%si)
+- Fixed error when playing single results
+- Fixed error when playing a number keyword
+- Issue with wrong title to video matchup fixed
+
+### 2/3/2021
+##### v2.8.6:
+- Can't queue file upload using '%queue' fixed
+- Temporarily fixed slow APIs crashing the bot
+- More diverse and better pet images (%pet)
+- Funnier memes? At least they've got captions
+
+### 2/1/2021
+##### v2.8.5:
+- Added error messages for queue commands
+- Added alias to '%np' command (%nowplaying)
+- Error when custom playlist empty fixed
+- Think I fixed the wrong title/thumbnail bug
+- Multiplayer games also give money now (%h.games)
+
+### 1/31/2021
+##### v2.8.4:
+- Fixed bossbadi's playlist not looping bug
+- Fixed bugs and added help to queue
+
+### 1/30/2021
+##### v2.8.3:
+- Fixed encoding bug with '%play' command
+- Searches YouTube links rather than play them
+- The queue system is finally here! (Not 100% bug free)
+- Skip to the next song in queue with ease (%skip)
+- New songs added to bossbadi's playlist (%plugin)
+
+### 1/29/2021
+##### v2.8.2:
+- Improved calculator command (%calc)
+- Fixed more possible chatbot bugs
+- Loop counter resetting bug fixed
+- Now supports playing file uploads
+
+### 1/26/2021
+##### v2.8.1:
+- Fixed minor mention prefix bug
+- Added auto mod link spamming (%set)
+- Improved some moderation errors
+
+### 1/25/2021
+##### v2.8.0:
+- Fixed minor error in Minecraft checking alg.
+- New music added to bossbadi's playlist
+
+### 1/16/2021
+##### v2.7.8:
+- Fixed bug when running pagination cmds
+- New owner command '%lfind' working
+- Fixed some bugs when DMing the bot
+- Get URL of custom emoji (%emojiurl)
+##### v2.7.7:
+- Improved server icon command (%icon)
+- Redesigned weather command (%weather)
+##### v2.7.6:
+- Removed '%vid' command
+- Say goodbye to the confusing Gists
+
+### 1/14/2021
+##### v2.7.5:
+- New owner only website screenshot command (%ss)
+
+### 1/13/2021
+##### v2.7.4:
+- '%whois' now errors if invalid user
+- Improved code for some music commands
+- Improved '%postcard' error messages
+##### v2.7.3:
+- Slightly modified '%mc' checking alg.
+- Added ImageMagick buildpack
+
+### 1/12/2021
+##### v2.7.2:
+- Bot edits searching message to now playing
+- Fixed slashes overload error message in chatbot
+- Better error when DMing bot (%dm and %postcard)
+- User missing permissions error improved
+##### v2.7.1:
+- Combined messages in '%hack' for fewer edits
+- Fixed link auto mod in support server
+- Improved error message in '%translate'
+- Improved checking alg. for multiplayer games
+
+### 1/9/2021
+##### v2.7.0:
+- Improved hack command (%hack)
+
+### 1/8/2021
+##### v2.6.9:
+- Updated random command error message
+- 12 new image mod commands (%h.img)
+- Reaction pagination now in '%h.img'
+- Removed some command aliases
+
+### 1/7/2021
+##### v2.6.8:
+- Muted role setup command improved (%mute)
+- Leaderboard naturally slow, so reduced cooldown
+- Couldn't play links => fixed
+- Improved error messages in '%del' command
+
+### 1/5/2021
+##### v2.6.7:
+- Bug in '%math' possibly patched but not fixed
+
+### 1/2/2021
+##### v2.6.6:
+- Remodeled user DMs through bot (%dm and %postcard)
+- "You cannot do that" error message improved
+- Error DMs from bot seem to have mostly vanished
+- Patched possible silent cooldown bypasses
+- Silent cooldown now off during multiplayer games
+
+### 1/1/2021
+##### v2.6.5:
+- Fixed support server advertising bypass
+- Links auto mod improved in support server
+- Fixed error when skipping song (%skip)
+
+### 12/31/2020
+##### v2.6.4:
+- Change volume of the song with '%vol [Num]'
+##### v2.6.3:
+- Fixed something with a developer command
+- Fixed some moderation commands
+- Some more custom stuff
+
+### 12/30/2020
+##### v2.6.2:
+- Fixed error if you loop and then run '%stop'
+- New songs added to custom playlist (%plugin)
+
+### 12/29/2020
+##### v2.6.1:
+- Loop the custom playlist or current track (%loop)
+- The playlist command is now '%pl'
+- Updated music plugins (%plugin)
+##### v2.6.0:
+- Why not, check my permissions with '%perm'
+- Fixed special playlist reset bug (%plugin)
+- View the special playlist (%plist --bossbadi)
+
+### 12/28/2020
+##### v2.5.9:
+- Get avatar of users not in the server
+- Image mods can also be used on non-server users
+- '%triggered' now works on image uploads
+- New developer's custom music playlist (%plugin)
+
+### 12/25/2020
+##### v2.5.8:
+- Improved server info command (%serverinfo)
+- '%whois' can now fetch non-server accounts
+- Now you can ban non-server accounts with user ID (known as a hack ban but the command is still '%ban')
+- Unban someone with the user ID (%unban)
+- Possible ping abuse with chatbot fixed
+
+### 12/24/2020
+##### v2.5.7:
+- 1 second silent now for all commands
+
+### 12/23/2020
+##### v2.5.6:
+- Error with the pytube package, reinstalled
+- New mute system: run '%mute' to setup muted perms.
+- Improved most moderation commands
+- Spam ping auto mute much faster due to new mute system
+
+### 12/19/2020
+##### v2.5.5:
+- Spam ping auto mod now ignores bot pings
+- Fixed possible multiple spam ping mutes
+- Can now specify slowmode through minutes
+- Improved '%wipe' command and fixed errors
+- Auto moderation now works on edited messages
+- Added avatar command (%avatar [User])
+- If the multiplayer bug isn't fixed now...
+
+### 12/15/2020
+##### v2.5.4:
+- Added a 1 second silent cooldown for '%bake'
+
+### 12/12/2020
+##### v2.5.3:
+- The index issue with multi. games are soooo-
+- Fixed possible msg length error with chatbot
+
+### 12/10/2020
+##### v2.5.2:
+- Reorganized the general commands help embed (%h.gen)
+- Now you can snipe channels (%snipe/%editsnipe)
+
+### 12/8/2020
+##### v2.5.1:
+- Hack command is back!
+##### v2.5.0:
+- Chatbot wasn't working so switched to a new API
+- Translate text to English with '%translate'
+- Fixed minor issue with editsnipe and changed layout
+- Fixed minor issue if calculator response is too long
+
+### 12/6/2020
+##### v2.4.9:
+- Image cooldown bug fixed?
+- Index error for multi. games fixed?
+- Fixed '%np' not working for custom songs
+- Fixed graph overlap with '%graph' command
+- Image mods support JPG file uploads for now (%h.img)
+- Fixed rare bug with '%whois' if too many roles
+
+### 12/2/2020
+##### v2.4.8:
+- A more realistic chatbot with typing trigger
+- Fixed minor cooldown bug with graph command
+##### v2.4.7:
+- Image mods now also work for certain image URLs
+- Give credit where it's due (%credits)
+- Check balance and inventory of others (%bal, %inv)
+- A smarter custom embed with image URL parser (%embed)
+
+### 11/29/2020
+##### v2.4.6:
+- Fixed bug with cooldown message (maybe)
+- Fixed minor error with multiplayer games
+- Fixed directory error with graph command
+- %hack temporarily disabled for maintenance
+- Reorganized command help embeds
+- Added 10 new image manipulation commands (%h.img)
+##### v2.4.5:
+- Fixed bug with cooldown message (maybe)
+- Fixed minor error with multiplayer games
+
+### 11/28/2020
+##### v2.4.4:
+- Fixed possible editsnipe abuse with long msgs
+- Added triggered gif generator (%triggered)
+- Fixed bug with '%hack' command (if wrong ID)
+- Added invert image command (%invert)
+
+### 11/27/2020
+##### v2.4.3:
+- New Minecraft multiplayer game added (%h.games)
+- Bot errors are now sent in text channels
+- Added timestamps for certain embedded messages
+
+### 11/26/2020
+##### v2.4.2:
+- More diversified foods to bake (%bake)
+- Added a bit extra to the chatbot feature
+- Added edit sniping (%editsnipe)
+- More images for famous games (%famous)
+##### v2.4.1:
+- Calc command now accepts 'x' as mult. and others
+- Changed currency system, added '%bake' command
+
+### 11/25/2020
+##### v2.4.0:
+- Fixed hack command calls help command
+- Improved link parsing algorithm
+- 'say' and 'change' commands will not accept links
+- Made help embeds clearer for the foolish
+- Improved server info embed
+- Added graph generator. '%h.nerd' for more info
+- Added embed generator (%embed <Msg>)
+
+### 11/23/2020
+##### v2.3.9:
+- Fixed '%search' didn't paginate if missing permission
+- Fixed '%say' didn't work if missing permission
+- New and stronger links auto moderation (%set to config)
+
+### 11/21/2020
+##### v2.3.8:
+- Fixed possible talk, play, and calc abuse
+- Join/Play now checks for permissions before action
+- Fixed error messages for kick/ban issues
+##### v2.3.7:
+- Fixed error when running '%weather earth'
+- Fixed minor bugs with '%del' command
+- Improved '%whois' embed (added ID)
+- Fixed playing from search error
+- Auto mod spam pings in beta mode
+- Fixed mention prefix issues with certain commands
+- Fixed bot confused '%hi' with '%h'
+- Fixed issue when muting the bot (now you can't)
+- Better looking moderation action embeds
+- (New) Auto mod spam ping, setup with '%set'
+
+### 11/19/2020
+##### v2.3.6:
+- Play and search embeds improved look
+- Added uptime command (%uptime)
+- [Unrestricted server] added %verify command
+- Weather is here! (%weather <Location>)
+
+### 11/17/2020
+##### v2.3.5:
+- Fixed '%disconnect' calls dice roll command
+- Fixed mention prefix issue in '%set' and '%uset'
+- '%del' can delete messages up to 100 at once
+- '%wipe' now checks last 100 msgs per channel
+- Anyone can use '%whois' command now
+- Added '%serverinfo' command
+- Reaction pagination now auto removes reactions
+- Added now playing command (%np)
+- No more of those stupid allowed channels!
+- Better changelog format (simpler the better)
+- Added extra help to certain commands
+- Added alias to help command (%h)
+
+### 11/14/2020
+##### v2.3.4:
+- Fixed bug with '%hack' command
+- Hacking broadened to anyone and anything (%hack)
+- Fixed bugs with permissions and cooldown
+- More random stuff (coin flip, die roll, etc.)
+- Bot responds to mention as well as '%' prefix
+- Added privacy policy (%data). Go read it!
+
+### 11/10/2020
+##### v2.3.3:
+- '%say' now cannot be used to ping others
+- Better error messages if kick/ban failed
+- Play ANY video with only the url (%play)
+##### v2.3.2:
+- Fixed lag for other cmds when using %hack
+- Added cooldowns for certain commands
+- Explains commands if parameters left blank
+- Improved server icon embed (%icon)
+- Caught error when DMing a user who's blocked bot
+- Generate an image from text using '%png'
+- Fixed bug when initializing server settings
+
+### 11/8/2020
+##### v2.3.1:
+- Added user info command (%whois <User>)
+- Fixed some grammar with slowmode command
+- Better error if playlist gets too long
+- Turn text into emojis with '%emojify <Text>'
+- Instantly repeat your msg with '%say <Msg>'
+- Reorganized help command (%help)
+- Hack your friends with '%hack <User>'
+
+### 11/5/2020
+##### v2.3.0:
+- %s.verify command removed (because why not)
+- Delete messages from a user is here (%wipe @User)
+- Snipe recently deleted message with '%snipe'
+- Sniping messages can be configured (%set)
+- Added emojis for some commands
+
+### 11/3/2020
+##### v2.2.9:
+- New typing images with real words
+- Cleaned up some embeds
+- Changed bot presence
+
+### 11/2/2020
+##### v2.2.8:
+- Bot got trending on top.gg (not anymore)
+- Fixed minor error with mute command if @Muted role was higher than bot's role
+- Error message if failed to stream and download song
+- More detailed errors with slowmode command
+- Developer's message command changed to '%dev'
+- Cleaned up and organized command embeds
+- Updated allowed channels (%allowed)
+- Fixed some AI stuff
+
+### 10/31/2020
+##### v2.2.7:
+- Bot got approved on top.gg 20:41 EST
+- Vote for it using '%vote'
+- Removed spamming commands (for API abuse)
+##### v2.2.6:
+- Might have fixed occasional error with %play command
+
+### 10/29/2020
+##### v2.2.5:
+- More limitations for spamming commands
+- Limited deleting messages to max 50 per command
+- Manage messages perm. can change server settings
+- Bot now DMs moderated users
+- Changed some permissions for moderation commands
+- Added slowmode command for mods (%slow)
+- New bot status
+- New spam messages
+##### v2.2.4:
+- Made rich leaderboard better
+- find user from BOTH @mention and user ID
+- Delete messages limited up to 100 per command
+- Pagination with YouTube search results (%search)
+
+### 10/27/2020
+##### v2.2.3:
+- Improved calculator command with more functions (%calc)
+
+### 10/25/2020
+##### v2.2.2:
+- Added user settings (%uset)
+
+### 10/24/2020
+##### v2.2.1:
+- Fixed many bugs with YouTube searches
+- Plays audio at the best bitrate possible
+##### v2.2.0:
+- Dedicated YouTube search command (%search)
+- Previous search history
+
+### 10/23/2020
+##### v2.1.9:
+- Fixed so bot cannot mass ping
+- Bot can now play live streams and unlimited videos
+- Lower latency for YouTube searches
+
+### 10/22/2020
+##### v2.1.8:
+- Added optional reason parameter for kick/ban commands
+- Reorganized and changed a few commands to make more sense
+- Might have fixed the high latency issue with voice channel searching command
+- Combined all bugs in one location (%bugs)
+
+### 10/21/2020
+##### v2.1.7:
+- Mute command working better than ever
+- No need to '%join' voice channel anymore, just type '%play <Song>' and bot will automatically join!
+- Reactions to music commands
+
+### 10/19/2020
+##### v2.1.6:
+- Made the postcard command more efficient
+- Fixed the descriptions of some commands
+- Added a stop spamming command that kind of works (%s.toggle)
+
+### 10/18/2020
+##### v2.1.4:
+- Improved voice channel commands and the debug command (%h.voice)
+
+### 10/15/2020
+##### v2.0.6:
+- Something totally random and bizarre is here
+##### v2.0.3:
+- Fixed bug when searching for youtube video
+- Changed spam messages (fresh, brand new spam!)
+- Improved member count command
+
+### 10/14/2020
+##### v2.0.2:
+- Fixed bug when joining a voice channel (maybe?)
+
+### 10/13/2020
+##### v1.9.5:
+- Fixed major bug when downloading live streams -- just don't download them
+- Fixed issues with abusing the voice channel commands
+- Most previous song played is now cached for quicker access!
+- Fixed bug in mute command
+- Fixed bug when bot sends custom messages
+
+### 10/12/2020
+##### v1.9.0:
+- Added about page (%about)
+- Added allowed channels page (%allowed)
+##### v1.8.8:
+- Fixed minor bug with online queries for voice channel commands
+
+### 10/11/2020
+##### v1.8.4:
+- Online queries for voice channels are here (%h.voice)
+
+### 10/10/2020
+##### v1.8.2:
+- Added shop and one new purchasable item (%shop)
+- Added inventory (%inv)
+- Moderate messages setting default changed to False (%set)
+- '%h.cust' is now '%h.info'
+- New type this images with color (%work)
+
+### 10/7/2020
+##### v1.8.1:
+- Mute commands are now available on all servers!
+- Added dog and cat pictures ('%pet')
+- Reorganized command help embeds
+
+##### v1.7.9:
+- No more copy + paste for typing job
+- Leaderboard changed to richest users in the server (%rich)
+- Modified bot invite link (%bot)
+- New music (%h.voice)
+
+### 10/5/2020
+##### v1.7.6:
+- Added settings (%set)
+- Improved '%del' command
+- More custom status?
+
+### 10/4/2020
+##### v1.7.3:
+- Cash leaderboard command (`%rich`)
+- New way to earn money (`%work`)
+##### v1.7.0:
+- Fixed bug with balance displaying in currency system (%h.cash)
+
+### 10/3/2020
+##### v1.6.9:
+- Added very basic currency system (`%h.cash`)
+
+### 10/1/2020
+##### v1.5.9:
+- playlist feature added in voice channel commands (%h.voice)
+- added bug fix command that may fix some bugs with vc commands
+##### v1.5.7:
+- More voice channel commands! (pause, unpause, stop)
+
+### 9/30/2020
+##### v1.5.3:
+- fixed some confusion with moderation commands
+- new roasts (total of 100+)
+- new yo mama jokes (total of 200+)
+- music commands are here! (%h.voice)
+
+### 9/29/2020
+##### v1.4.4:
+- randomized bot custom status (because why not)
+##### v1.3.9:
+- fixed issue with Heroku not being able to find users
+- changed mod commands to '%h.mod'
+- improved total users command (%users)
+- more famous photos (%famous)
+- improved code (duh)
+
+### 9/27/2020
+##### v1.1.3:
+- improved managing other bots functions
+- more famous photos (%famous)
+- added MEMES (%meme)
+- reorganized commands
+
+### 9/26/2020
+##### v1.1.0:
+- added print total servers command (%servers)
+- added multiplayer game (%famous)
+- changed help commands, now it's '%h.<Cmd>'
+
+### 9/25/2020
+##### v1.0.7:
+- made bot talk commands suitable for multiple servers
+- you can now add botbadi to any server (%bot)
+    
+##### v1.0.6:
+- fixed some command descriptions
+- improved admin commands
+- improved server ad (%invite)
+
+### 9/23/2020
+##### v1.0.5:
+- fixed deployment bug with admin commands
+- added calculator command to perform basic arithmetic (%calc <Problem>)
+- fixed welcome message to be universal
+- new ROASTS
+
+### 9/23/2020
+##### v1.0.2:
+- fixed encoding issue with roasts
+- fixed some embed colors
+##### v1.0.1:
+- added utility commands (%u.help)
+- improved admin %mute command
+##### v1.0.0:
+- made custom server invite link (gopubby.com/discord)
+- fixed bug in admin DM command
+
+### 9/22/2020
+v0.9.8:
+- added %mute and %unmute commands for admins
+- made functions cleaner
+- changed server invite link

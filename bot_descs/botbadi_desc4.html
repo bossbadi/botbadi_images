@@ -1,0 +1,634 @@
+<!--
+v4
+v3.1 but with new commands because of rewrite update
+-->
+
+<style>
+  /* start top.gg configuration */
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+    }
+
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+
+  /* float avatar */
+  .entity-header__image {
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .site-nav,
+  .entity-announcement__header,
+  .entity-announcement,
+  .entity-content__description,
+  .entity-sidebar__button,
+  .entity-header__button-text,
+  .entity-table__cell,
+  .entity-tag.hoverable,
+  .entity-owner.hoverable,
+  .dashboard__input.user-comment {
+    background-color: rgba(0, 0, 0, 60%);
+  }
+
+  /* set background */
+  .entity-wrapper {
+    background: url("https://i.imgur.com/va1tYvh.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scrollbar-width: none;
+  }
+
+  .entity-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  #menu {
+    background: transparent;
+  }
+
+  .entity-content__description {
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 10px;
+  }
+
+  /* end top.gg configuration */
+
+  code {
+    color: #fe4a00;
+    background-color: rgba(0, 0, 0, 20%);
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    box-shadow: 0 0 10em black inset;
+  }
+
+  td,
+  th {
+    border: 1px solid;
+    text-align: left;
+    padding: 8px;
+    min-width: 7em;
+  }
+
+  .category-color {
+    color: #02c7fe;
+  }
+
+  .category-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .commands-container {
+    padding: 0em 1em 1em 0;
+    width: 100%;
+  }
+
+  .image-container {
+    padding: 0em 1em 1em 0;
+    width: 500px;
+  }
+
+  @media screen and (max-width: 1350px) {
+    .category-container {
+      flex-direction: column;
+    }
+
+    .image-container {
+      display: none;
+    }
+  }
+</style>
+
+
+<p>
+  You are looking at the all-around Discord bot developed by bossbadi using Python 3. It is jam-packed with a plethora
+  of features inspired from popular bots including an addictive economy system, image modification, guessing games,
+  typing races, auto mod, chatbot and more! It has over 100 unique commands that can be used to liven up your
+  servers. Oh, and a plus: it's verified by the Discord developer team so you know it's legit! Send <code>%help</code>
+  to get started and you'll be glad you did.
+</p>
+
+<h2 class="category-color">Music</h2>
+<p>
+  Let's take a look at the music commands. Supported plugins include YouTube, Bandcamp, Soundcloud, Twitch, Vimeo,
+  Mixer, stream urls, and file uploads. When it comes to music, we've got you covered.
+</p>
+<div class="category-container">
+  <div class="commands-container">
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>join</code></td>
+        <td>Join your voice channel</td>
+      </tr>
+      <tr>
+        <td><code>play</code></td>
+        <td>Play a song from keywords, url, or file upload</td>
+      </tr>
+      <tr>
+        <td><code>search</code></td>
+        <td>Search for a song or get the previous search results</td>
+      </tr>
+      <tr>
+        <td><code>queue</code></td>
+        <td>Show/add song to the music queue</td>
+      </tr>
+      <tr>
+        <td><code>skip</code></td>
+        <td>Skip to the next song in the queue</td>
+      </tr>
+      <tr>
+        <td><code>seek</code></td>
+        <td>Skip to a specific time in the song</td>
+      </tr>
+      <tr>
+        <td><code>volume</code></td>
+        <td>Show/change the volume (0 to 1000)</td>
+      </tr>
+      <tr>
+        <td><code>loop</code></td>
+        <td>Toggle the player&#39;s loop</td>
+      </tr>
+      <tr>
+        <td><code>nowplaying</code></td>
+        <td>Show the currently playing song</td>
+      </tr>
+      <tr>
+        <td><code>shuffle</code></td>
+        <td>Randomize the order of songs in the queue</td>
+      </tr>
+      <tr>
+        <td><code>pop</code></td>
+        <td>Remove a song from the queue</td>
+      </tr>
+      <tr>
+        <td><code>move</code></td>
+        <td>Reposition a queued song</td>
+      </tr>
+      <tr>
+        <td><code>pause</code></td>
+        <td>Pause audio</td>
+      </tr>
+      <tr>
+        <td><code>resume</code></td>
+        <td>Resume audio</td>
+      </tr>
+      <tr>
+        <td><code>stop</code></td>
+        <td>Stop audio</td>
+      </tr>
+      <tr>
+        <td><code>clear</code></td>
+        <td>Clear the queue</td>
+      </tr>
+      <tr>
+        <td><code>leave</code></td>
+        <td>Leave your voice channel and clear the queue</td>
+      </tr>
+    </table>
+  </div>
+  <div class="image-container">
+    <img src="https://i.imgur.com/5xvs5TZ.png">
+  </div>
+</div>
+
+
+<h2 class="category-color">Moderation</h2>
+<p>
+  Moderate your server with ease. Ever had a time when you wanted to ban someone but couldn't think
+  of an insult to tell the offender? Put <code>--roast</code> in the
+  <code>[reason]</code> parameter for any user moderation command (such as ban) and the bot will DM the offender a
+  random insult. Now you don't have to search one up!
+</p>
+<div class="category-container">
+  <div class="commands-container">
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>purge</code></td>
+        <td>Advanced message deletion</td>
+      </tr>
+      <tr>
+        <td><code>mute</code></td>
+        <td>Mute members</td>
+      </tr>
+      <tr>
+        <td><code>unmute</code></td>
+        <td>Unmute members</td>
+      </tr>
+      <tr>
+        <td><code>kick</code></td>
+        <td>Kick members from the server</td>
+      </tr>
+      <tr>
+        <td><code>ban</code></td>
+        <td>Ban users from the server</td>
+      </tr>
+      <tr>
+        <td><code>unban</code></td>
+        <td>Unban users from the server</td>
+      </tr>
+      <tr>
+        <td><code>slow</code></td>
+        <td>Set the channel slowmode (max 6 hours)</td>
+      </tr>
+      <tr>
+        <td><code>rmr</code></td>
+        <td>Remove all reactions from messages</td>
+      </tr>
+    </table>
+  </div>
+  <div class="image-container">
+    <img src="https://i.imgur.com/6gIkoW3.png">
+  </div>
+</div>
+
+
+<h2 class="category-color">Images</h2>
+<p>
+  Surprise your friends by adding
+  filters, mods, and special effects to their profile pictures. The image argument can be a user mention, user ID, image
+  url, or file upload. Get your images modified any way you choose!
+</p>
+<div class="category-container">
+  <div class="commands-container">
+    <table>
+      <tr>
+        <th>Description</th>
+        <th>Command</th>
+      </tr>
+      <tr>
+        <td><code>blueshift</code></td>
+        <td>Produce a gentle night with a moonlight effect</td>
+      </tr>
+      <tr>
+        <td><code>blur</code></td>
+        <td>Gaussian blur an image (basically blurring it)</td>
+      </tr>
+      <tr>
+        <td><code>border</code></td>
+        <td>Idk just add a black border around the image</td>
+      </tr>
+      <tr>
+        <td><code>bright</code></td>
+        <td>Discord light theme flashbacks...oww my eyes!</td>
+      </tr>
+      <tr>
+        <td><code>burn</code></td>
+        <td>Burn the image like it just came out of the furnace</td>
+      </tr>
+      <tr>
+        <td><code>carve</code></td>
+        <td>Carve the image on a gray surface</td>
+      </tr>
+      <tr>
+        <td><code>charcoal</code></td>
+        <td>Sketch the image with a chunk of charcoal</td>
+      </tr>
+      <tr>
+        <td><code>circle</code></td>
+        <td>Create a soft and blurry circle on the image</td>
+      </tr>
+      <tr>
+        <td><code>color</code></td>
+        <td>Generate an image with your color</td>
+      </tr>
+      <tr>
+        <td><code>cube</code></td>
+        <td>Turn a boring 2D image into a 3D cube</td>
+      </tr>
+      <tr>
+        <td><code>dark</code></td>
+        <td>Turn the brightness down real low</td>
+      </tr>
+      <tr>
+        <td><code>dust</code></td>
+        <td>Make your image look like brown dust</td>
+      </tr>
+      <tr>
+        <td><code>edge</code></td>
+        <td>Detect edges on images with a simple convolution filter</td>
+      </tr>
+      <tr>
+        <td><code>emboss</code></td>
+        <td>Generate a 3D print relief effect</td>
+      </tr>
+      <tr>
+        <td><code>floor</code></td>
+        <td>It&#39;s tiled flooring but the tiles are your image</td>
+      </tr>
+      <tr>
+        <td><code>gray</code></td>
+        <td>Grayscale an image (I know, everyone&#39;s least favorite)</td>
+      </tr>
+      <tr>
+        <td><code>invert</code></td>
+        <td>Invert the colors (great for alt account avatars)</td>
+      </tr>
+      <tr>
+        <td><code>jail</code></td>
+        <td>They broke the law. They pay the consequences.</td>
+      </tr>
+      <tr>
+        <td><code>kuwahara</code></td>
+        <td>Add smoothing to reduce noise but preserve edges</td>
+      </tr>
+      <tr>
+        <td><code>noise</code></td>
+        <td>Add bits of color over the image</td>
+      </tr>
+      <tr>
+        <td><code>photo</code></td>
+        <td>Print the image on photographic paper</td>
+      </tr>
+      <tr>
+        <td><code>pixel</code></td>
+        <td>Pixelate an image (like blurring but broader)</td>
+      </tr>
+      <tr>
+        <td><code>png</code></td>
+        <td>Generate a PNG image with your text</td>
+      </tr>
+      <tr>
+        <td><code>rain</code></td>
+        <td>It&#39;s raining, very sad times indeed...</td>
+      </tr>
+      <tr>
+        <td><code>ripple</code></td>
+        <td>Create a ripple or wave effect with the image</td>
+      </tr>
+      <tr>
+        <td><code>sepia</code></td>
+        <td>Give the image a brownish tone just like the early days</td>
+      </tr>
+      <tr>
+        <td><code>sharp</code></td>
+        <td>Sharpen up an image making it more vivid</td>
+      </tr>
+      <tr>
+        <td><code>sketch</code></td>
+        <td>Make it look like an artist sketched it</td>
+      </tr>
+      <tr>
+        <td><code>spray</code></td>
+        <td>Give the image a spray-painted feel</td>
+      </tr>
+      <tr>
+        <td><code>suck</code></td>
+        <td>Get sucked into a black hole at the center</td>
+      </tr>
+      <tr>
+        <td><code>swirl</code></td>
+        <td>Create a whirlpool effect by rotating the pixels</td>
+      </tr>
+      <tr>
+        <td><code>thick</code></td>
+        <td>Is it just me, or is that looking kind of thick?</td>
+      </tr>
+      <tr>
+        <td><code>tiedie</code></td>
+        <td>Make your colorful image rainbow-looking and colorful</td>
+      </tr>
+      <tr>
+        <td><code>tilt</code></td>
+        <td>Diagonally tilt the image, giving it a 3D look</td>
+      </tr>
+      <tr>
+        <td><code>triggered</code></td>
+        <td>Well someone is triggered (returns a GIF)</td>
+      </tr>
+      <tr>
+        <td><code>updown</code></td>
+        <td>Turn an image upside down, or 180 degrees</td>
+      </tr>
+    </table>
+  </div>
+  <div class="image-container">
+    <img src="https://i.imgur.com/neH4oVz.png">
+  </div>
+</div>
+
+
+<h2 class="category-color">Economy</h2>
+<p>
+  Earn coins by completing tasks of various difficulties ranging from baking foods and guessing celebrities to typing
+  phrases and solving math problems. With enough coins, users can visit the shop to spend their earnings on cool items
+  and rob coins from other members.
+</p>
+
+<div class="category-container">
+  <div class="commands-container">
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>balance</code></td>
+        <td>See how rich someone is</td>
+      </tr>
+      <tr>
+        <td><code>inventory</code></td>
+        <td>Look at someone&#39;s inventory</td>
+      </tr>
+      <tr>
+        <td><code>rob</code></td>
+        <td>Rob coins from someone&#39;s wallet</td>
+      </tr>
+      <tr>
+        <td><code>rich</code></td>
+        <td>Show the richest users in the server</td>
+      </tr>
+      <tr>
+        <td><code>shop</code></td>
+        <td>Visit the shop to spend your coins</td>
+      </tr>
+      <tr>
+        <td><code>minecraft</code></td>
+        <td>Guess the Minecraft item and earn money</td>
+      </tr>
+      <tr>
+        <td><code>famous</code></td>
+        <td>Get rewarded for knowing your celebrities</td>
+      </tr>
+      <tr>
+        <td><code>quote</code></td>
+        <td>Type a famous quote for decent pay</td>
+      </tr>
+      <tr>
+        <td><code>work</code></td>
+        <td>Type two words for better pay</td>
+      </tr>
+      <tr>
+        <td><code>buy</code></td>
+        <td>Buy items from the shop</td>
+      </tr>
+      <tr>
+        <td><code>sell</code></td>
+        <td>Sell items in your inventory</td>
+      </tr>
+      <tr>
+        <td><code>use</code></td>
+        <td>Use the items you&#39;ve purchased</td>
+      </tr>
+      <tr>
+        <td><code>bake</code></td>
+        <td>Use your baking skills to make money</td>
+      </tr>
+      <tr>
+        <td><code>add</code></td>
+        <td>Add two numbers for some money</td>
+      </tr>
+      <tr>
+        <td><code>subt</code></td>
+        <td>Subtract two numbers and earn coins</td>
+      </tr>
+      <tr>
+        <td><code>mult</code></td>
+        <td>Multiply two numbers and get paid</td>
+      </tr>
+      <tr>
+        <td><code>div</code></td>
+        <td>Divide two numbers for some coins</td>
+      </tr>
+      <tr>
+        <td><code>sqrt</code></td>
+        <td>Square roots yield extra coins</td>
+      </tr>
+      <tr>
+        <td><code>vote</code></td>
+        <td>Vote for the bot and get rewarded</td>
+      </tr>
+    </table>
+  </div>
+  <div class="image-container">
+    <img src="https://i.imgur.com/lPGkYPW.png">
+  </div>
+</div>
+
+
+<h2 class="category-color">Fun</h2>
+<p>
+  These are fun commands to experiment with when you're bored and have nothing to do, such as interacting with the
+  chatbot.
+</p>
+
+<div class="category-container">
+  <div class="commands-container">
+    <table>
+      <tr>
+        <th>Description</th>
+        <th>Command</th>
+      </tr>
+      <tr>
+        <td><code>chat</code></td>
+        <td>I know you&#39;re urging to speak with me</td>
+      </tr>
+      <tr>
+        <td><code>hack</code></td>
+        <td>Realistically hack someone or something</td>
+      </tr>
+      <tr>
+        <td><code>emojify</code></td>
+        <td>Transform text into thick, blue emoji</td>
+      </tr>
+      <tr>
+        <td><code>ascii</code></td>
+        <td>Transform text into ascii-looking text</td>
+      </tr>
+      <tr>
+        <td><code>embed</code></td>
+        <td>Embed an image upload, text, or both</td>
+      </tr>
+      <tr>
+        <td><code>say</code></td>
+        <td>Make me repeat your message</td>
+      </tr>
+      <tr>
+        <td><code>fact</code></td>
+        <td>Get a random interesting fact</td>
+      </tr>
+      <tr>
+        <td><code>eightball</code></td>
+        <td>Bring your questions to the magic 8 ball</td>
+      </tr>
+      <tr>
+        <td><code>flip</code></td>
+        <td>Flip a two-sided coin</td>
+      </tr>
+      <tr>
+        <td><code>roll</code></td>
+        <td>Roll a six-sided die</td>
+      </tr>
+      <tr>
+        <td><code>random</code></td>
+        <td>Get a random integer</td>
+      </tr>
+      <tr>
+        <td><code>meme</code></td>
+        <td>Get a random meme just for you</td>
+      </tr>
+      <tr>
+        <td><code>animal</code></td>
+        <td>See some cute animals</td>
+      </tr>
+      <tr>
+        <td><code>flame</code></td>
+        <td>Get a random yo mama joke</td>
+      </tr>
+      <tr>
+        <td><code>roast</code></td>
+        <td>Get a random insult</td>
+      </tr>
+    </table>
+  </div>
+  <div class="image-container">
+    <img src="https://i.imgur.com/vVotnyt.png">
+  </div>
+</div>
+
+
+<h2 class="category-color">And More</h2>
+<p>
+  Many interesting commands and features weren't described in detail here and it's up to you to
+  discover them!
+  <br><br>
+  If you are experiencing any issues, <i>never</i> hesitate to contact the developer:<br>
+  <b>Email:</b> <a href="mailto:bossbadi123@gmail.com">bossbadi123@gmail.com</a><br>
+  <b>Discord:</b> <a href="https://discord.com/users/712323326575378562" target="_blank">bossbadi#3371</a><br>
+  <b>Support server:</b> <a href="https://discord.gg/rzDqQqD" target="_blank">https://discord.gg/rzDqQqD</a>
+</p>

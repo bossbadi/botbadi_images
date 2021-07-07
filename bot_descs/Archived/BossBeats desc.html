@@ -1,149 +1,210 @@
 <style>
-@keyframes float {
+  @keyframes float {
     0% {
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-        transform: translatey(0px);
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
     }
+
     50% {
-        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-        transform: translatey(-20px);
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
     }
+
     100% {
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-        transform: translatey(0px);
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
     }
-}
+  }
 
-@keyframes typing { 
-    from { 
-        width: 0
-    } 
-    to { 
-        width: 100%
-    } 
-}
+  @keyframes typing {
+    from {
+      width: 0
+    }
 
-.entity-header__name {
-  overflow: hidden; 
-  animation: typing 5s
-}
+    to {
+      width: 100%
+    }
+  }
 
-.entity-header__image {
+  .entity-header__name {
+    overflow: hidden;
+    animation: typing 5s
+  }
+
+  .entity-header__image {
     width: 150px;
     height: 150px;
     box-sizing: border-box;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
-}
-
-.site-nav,
-.entity-announcement__header,
-.entity-announcement,
-.entity-sidebar__button,
-.entity-header__button-text,
-.entity-table__cell,
-.entity-tag.hoverable,
-.entity-owner.hoverable,
-.dashboard__input.user-comment {
-  background-color: rgba(0, 0, 0, 60%);
-}
-
-.entity-wrapper {
-      width: 100%;
-      height: 100vh;
-      overflow: scroll;
-      overflow-x: hidden;
-      background: url("https://i.imgur.com/zaTxNMd.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      scrollbar-width: none;
   }
 
-.entity-wrapper::-webkit-scrollbar {
+  .site-nav,
+  .entity-announcement__header,
+  .entity-announcement,
+  .entity-sidebar__button,
+  .entity-header__button-text,
+  .entity-table__cell,
+  .entity-tag.hoverable,
+  .entity-owner.hoverable,
+  .dashboard__input.user-comment {
+    background-color: rgba(0, 0, 0, 60%);
+  }
+
+  .entity-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: url("https://i.imgur.com/zaTxNMd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    scrollbar-width: none;
+  }
+
+  .entity-wrapper::-webkit-scrollbar {
     display: none;
-}
+  }
 
-body{
-   scrollbar-width: none;
-}
+  body {
+    scrollbar-width: none;
+  }
 
-body::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     display: none;
-}
+  }
 
-#menu {
-  background: transparent;
-}
+  #menu {
+    background: transparent;
+  }
 
-.entity-content__description {
+  .entity-content__description {
     background: rgba(0, 0, 0, 0.6) !important;
     padding: 10px
-}
+  }
 
-code {
+  code {
     background-color: rgba(0, 0, 0, 20%);
-}
+  }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+  }
 
-.img-shadow {
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .img-shadow {
     box-shadow: 0px 0px 5px #000000;
-}
+  }
 </style>
 
-<p>BossBeats is a smarter music bot that has advanced features. It supports YouTube, SoundCloud, Twitch, stream URLs, file uploads, and more! Get started by typing <code>$help</code>.</p>
+<p>BossBeats is a smarter music bot that has advanced features. It supports YouTube, SoundCloud, Twitch, stream URLs,
+  file uploads, and more! Get started by typing <code>$help</code>.</p>
 
 <h2>Here are the main commands:</h2>
-<table><tr>
-<td>
-  <table>
-    <tr>
-      <th>Command</th>
-      <th>Description</th>
-    </tr>
-    <tr><td><code>join</code></td><td>Join your voice channel</td></tr>
-    <tr><td><code>play [query]</code></td><td>Play a song from keywords, url, or file upload</td></tr>
-    <tr><td><code>search [query]</code></td><td>Search for a song or get the previous search results</td></tr>
-    <tr><td><code>leave</code></td><td>Leave the voice channel and clear the queue</td></tr>
-
-    <tr><td><code>skip</code></td><td>Skip to the next song in queue</td></tr>
-    <tr><td><code>pause</code></td><td>Pause audio</td></tr>
-    <tr><td><code>resume</code></td><td>Resume audio</td></tr>
-    <tr><td><code>stop</code></td><td>Stop audio</td></tr>
-
-    <tr><td><code>queue [query]</code></td><td>Show the music queue/add song to queue</td></tr>
-    <tr><td><code>shuffle</code></td><td>Shuffle the queue</td></tr>
-    <tr><td><code>pop {index}</code></td><td>Remove a song from the queue</td></tr>
-    <tr><td><code>clear</code></td><td>Clear the queue</td></tr>
-
-    <tr><td><code>volume [vol]</code></td><td>Change/show volume (0 to 1000)</td></tr>
-    <tr><td><code>nowplaying</code></td><td>Show the currently playing song, if any</td></tr>
-    <tr><td><code>seek {seconds}</code></td><td>Skip to a specific time in the song</td></tr>
-    <tr><td><code>ping</code></td><td>Check my response time</td></tr>
-  </table>
-</td>
-<td style="width: 30%; vertical-align: middle">
-  <img class="img-shadow" src="https://i.imgur.com/X7HX2Da.png">
-  <img class="img-shadow" src="https://i.imgur.com/4wik10p.png">
-</td>
-</tr></table>
+<table>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><code>join</code></td>
+          <td>Join your voice channel</td>
+        </tr>
+        <tr>
+          <td><code>play</code></td>
+          <td>Play a song from keywords, url, or file upload</td>
+        </tr>
+        <tr>
+          <td><code>search</code></td>
+          <td>Search for a song or get the previous search results</td>
+        </tr>
+        <tr>
+          <td><code>queue</code></td>
+          <td>Show/add song to the music queue</td>
+        </tr>
+        <tr>
+          <td><code>skip</code></td>
+          <td>Skip to the next song in the queue</td>
+        </tr>
+        <tr>
+          <td><code>seek</code></td>
+          <td>Skip to a specific time in the song</td>
+        </tr>
+        <tr>
+          <td><code>volume</code></td>
+          <td>Show/change the volume (0 to 1000)</td>
+        </tr>
+        <tr>
+          <td><code>loop</code></td>
+          <td>Toggle the player&#39;s loop</td>
+        </tr>
+        <tr>
+          <td><code>nowplaying</code></td>
+          <td>Show the currently playing song</td>
+        </tr>
+        <tr>
+          <td><code>shuffle</code></td>
+          <td>Randomize the order of songs in the queue</td>
+        </tr>
+        <tr>
+          <td><code>pop</code></td>
+          <td>Remove a song from the queue</td>
+        </tr>
+        <tr>
+          <td><code>move</code></td>
+          <td>Reposition a queued song</td>
+        </tr>
+        <tr>
+          <td><code>pause</code></td>
+          <td>Pause audio</td>
+        </tr>
+        <tr>
+          <td><code>resume</code></td>
+          <td>Resume audio</td>
+        </tr>
+        <tr>
+          <td><code>stop</code></td>
+          <td>Stop audio</td>
+        </tr>
+        <tr>
+          <td><code>clear</code></td>
+          <td>Clear the queue</td>
+        </tr>
+        <tr>
+          <td><code>leave</code></td>
+          <td>Leave your voice channel and clear the queue</td>
+        </tr>
+        <tr>
+          <td><code>radio</code></td>
+          <td>View the available radio stations/playlists</td>
+        </tr>
+      </table>
+    </td>
+    <td style="width: 30%; vertical-align: middle">
+      <img class="img-shadow" src="https://i.imgur.com/X7HX2Da.png">
+      <img class="img-shadow" src="https://i.imgur.com/4wik10p.png">
+    </td>
+  </tr>
+</table>
 
 <p>
-Note the brackets <code>{}</code> and <code>[]</code> are only placeholders and should not be typed.
-<br><br>
-As always, if you are experiencing any issues, don't hesitate to contact the developer:<br>
-<b>Email:</b> <a href="mailto:andy@gopubby.com">andy@gopubby.com</a><br>
-<b>Discord:</b> <a href="https://discord.com/users/755896753693261866" target="_blank">goop bro#0451</a><br>
-<b>Support server:</b> <a href="https://discord.gg/rzDqQqD" target="_blank">https://discord.gg/rzDqQqD</a><br>
+  Note the brackets <code>{}</code> and <code>[]</code> are only placeholders and should not be typed.
+  <br><br>
+  As always, if you are experiencing any issues, don't hesitate to contact the developer:<br>
+  <b>Email:</b> <a href="mailto:andy@gopubby.com">andy@gopubby.com</a><br>
+  <b>Discord:</b> <a href="https://discord.com/users/755896753693261866" target="_blank">goop bro#0451</a><br>
+  <b>Support server:</b> <a href="https://discord.gg/rzDqQqD" target="_blank">https://discord.gg/rzDqQqD</a><br>
 </p>
